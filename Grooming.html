@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>The Homaholics</title>
+<link rel="stylesheet" href="./addons/css/mainpage.css">
+<link rel="stylesheet" href="./addons/css/slideshow.css">
+
+
+<style>
+    @font-face{
+            font-family: 'Raleway';
+            src: url(./addons/fonts/Raleway-Medium.ttf);
+    }
+    
+    @font-face{
+            font-family: 'Sofia';
+            src: url(./addons/fonts/Sofia-Regular.woff);
+    }
+    body{background: black;}
+	div,image{width:100%; padding:0px;}
+    nav,.content{font-family:'Sofia'; font-size: 120%;}
+    .flexbox{display: flex; align-items: stretch;-webkit-display: flex; -webkit-align-items: stretch; width: 100vw; height:100vh; color: ghostwhite; font-size: 500%;}
+    .flexitem{width:50%; height: 100%; text-align: center; background-repeat: no-repeat; opacity:0.85; text-shadow: 0 0 0.3em #555, 0 0 0.1em #222; cursor: pointer}
+    .flexitem{
+            -webkit-transition-property: width, opacity;
+            -webkit-transition-duration: 0.3s;
+            transition-property: width, opacity;
+            transition-duration: 0.3s;
+    }
+    .flexitem:hover{width:80%; opacity: 1;}
+</style>
+
+<body>
+<nav class="top">
+        <ul class="navbar center card gradtop">					
+            <li >&nbsp;</li>
+            <li ><a class="hover-none text-blue hover-text-light-blue" href="./Quickies.html">Quickies</a></li>
+ 			<li ><a class="hover-none text-blue hover-text-light-blue" href="./Grooming.html">Grooming</a></li>
+            <li ><a class="hover-none text-blue hover-text-light-blue" href="./Gardening.html">Gardening</a></li>
+  		    <li ><a class="hover-none text-blue hover-text-light-blue" href="./Health.html">Health</a></li>
+            <li ><a class="hover-none text-blue hover-text-light-blue" href="./AboutUs.html">About Us</a></li>
+            <li >&nbsp;</li>
+        </ul>				
+        <a href="./Landing.html"><img src="./addons/images/home-icon-blue.png" alt="Home" style="width:5%;" class="top"/></a>
+</nav>
+
+<div class="flexbox content">
+    <div class="flexitem animate-left" style="background: url('./addons/images/grooming_intro.jpg'); background-size: cover;" onclick="window.location.href='./Tie.html'"><div class="display-middle">Tie</div></div>
+    <div class="flexitem animate-bottom" style="background: url('./addons/images/scarf.jpg'); background-size: cover;" onclick="window.location.href='./Scarf.html'"><div class="display-middle">Scarf</div></div>
+    <div class="flexitem animate-right" style="background: url('./addons/images/hairstyle.png'); background-size: cover;" onclick="window.location.href='./Hairstyle.html'"><div class="display-middle">Hairstyle</div></div>
+</div>
+</body>
+</html>

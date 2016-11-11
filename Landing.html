@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Homaholics</title>
+	<link rel="stylesheet" href="./addons/css/mainpage.css">
+	<style>
+		@font-face{
+            font-family: 'Great Vibes';
+            src: url(./addons/fonts/GreatVibes-Regular.woff);
+        }
+
+        @font-face{
+            font-family: 'Sofia';
+            src: url(./addons/fonts/Sofia-Regular.woff);
+        }
+		footer a{font-family: 'Sofia', cursive; font-size: 2vw; text-decoration: none; background-color: transparent;font-weight: bold;text-shadow: 0 0 0.3em #666; color: white;}
+        footer a:hover{text-shadow: 0 0 0.6em #555, 0 0 0.4em #222; font-size: 2.02vw;}
+        ul{font-family: 'Sofia', cursive; font-size: 2vw;}
+        button{font-family: 'Sofia', cursive; font-size: 2vw;}
+        div,image{width:100%; padding:0px;}
+		.rmspace{font-size:0px;}
+		.maintext{ font-family:'Great Vibes', cursive; font-size: 17vw; text-align: center; text-shadow: -3px -3px 0 #AAA, 0 0 0.3em #777, 0 0 0.1em #222;}
+		.subtext{ font-family:'Sofia', cursive; font-size: 3vw; text-align: center; text-shadow: 0 0 0.3em #777, 0 0 0.1em #333;}
+        .mySlide{width:100vw; height:100vh;!important}
+        .navbar3 li{width:21%;}
+	</style>
+</head>
+<body>
+	<nav class="top">
+			<ul class="navbar card gradtop center ">					
+				<li >&nbsp;</li>
+				<li ><a class="hover-none text-grey hover-text-red" href="#Cooking">Quickies</a></li>
+ 				<li ><a class="hover-none text-grey hover-text-light-blue" href="#Grooming">Grooming</a></li>
+                <li ><a class="hover-none text-grey hover-text-green" href="#Gardening">Gardening</a></li>
+  				<li ><a class="hover-none text-grey hover-text-pink" href="#Health">Health</a></li>
+				<li ><a class="hover-none text-grey hover-text-dark-grey" href="#AboutUs">About Us</a></li>
+				<li >&nbsp;</li>
+			</ul>				
+			<a href="#"><img src="./addons/images/home-icon-light-grey.png" alt="Home" style="width:5%;" class="top" /></a>
+	</nav>
+	<div class="white display-container rmspace mySlide animate-opacity">
+		<img src="./addons/images/main page2.jpg" alt="Monica's Apartment" style="width:100%; height:100%;">
+		<div class="display-middle container text-white subtext" ><div class="maintext" style="text-border:1px;">Welcome</div> Home is where the heart lies. Make yourself at home right here :)</div>
+	</div><div id="Cooking" class="green display-container rmspace mySlide" >
+		<img src="./addons/images/food.jpg" class="opacity hover-opacity-off" alt="Food" style="width:100%; height:100%">
+		<div class="display-middle container text-white subtext"><div class="maintext">Quickies</div>"Sans Fire, Sans Fear."</div>
+		<div class="display-bottommiddle container"><button class="btn round-32 white text-red" onclick="window.location.href='./Quickies.html'">Look up Recipes</button></div>
+	</div><div id="Grooming" class="light-blue display-container rmspace mySlide">
+		<img src="./addons/images/diy.jpg" class="opacity hover-opacity-off" alt="diy" style="width:100%; height:100%">
+		<div class="display-middle container text-white subtext"><div class="maintext">Grooming</div>"We make it as simple as 1..2..3..."</div>
+		<div class="display-bottommiddle container"><button class="btn round-32 white text-light-blue" onclick="window.location.href='./Grooming.html'">Find out How</button></div>
+    </div><div id="Gardening" class="green display-container rmspace mySlide">
+		<img src="./addons/images/gardening_intro.jpg" class="opacity hover-opacity-off" alt="diy" style="width:100%; height:100%">
+		<div class="display-middle container text-white subtext"><div class="maintext">Gardening</div>"A thing of beauty is joy forever!"</div>
+		<div class="display-bottommiddle container"><button class="btn round-32 white text-green" onclick="window.location.href='./Gardening.html'">Come Meet Nature</button></div>
+	</div><div id="Health" class="pink display-container rmspace mySlide">
+		<img src="./addons/images/health2.jpg" class="opacity hover-opacity-off" alt="health" style="width:100%; height:100%">
+		<div class="display-middle container text-white subtext"><div class="maintext">Health</div>"Stay healthy and happy!"</div>
+		<div class="display-bottommiddle container"><button class="btn round-32 white text-pink" onclick="window.location.href='./Health.html'">Do a Health Check</button></div>
+	</div><div id="AboutUs" class="light-blue display-container rmspace mySlide" >
+		<img src="./addons/images/aboutUs.jpg" class="opacity hover-opacity-off" alt="outdoors" style="width:100%; height:100%">
+		<div class="display-middle container text-white subtext"><div class="maintext">About Us</div>"We would love to hear from you too."</div>
+		<div class="display-bottommiddle container"><button class="btn round-32 white text-grey" onclick="window.location.href='./AboutUs.html'">Get to know us</button></div>
+	<footer class="display-bottom container">
+           <a href="./Landing.html">&#x25B2; Back to Top</a>
+	</footer>
+    </div>
+<script>
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var Slides = document.querySelectorAll(".mySlide");
+    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        Slides[1].classList.add("animate-left");
+    } else {
+        Slides[1].className = Slides[1].className.replace("animate-left", "");
+    }
+    if (document.body.scrollTop > window.innerHeight+5 || document.documentElement.scrollTop > window.innerHeight+5) {
+        Slides[2].classList.add("animate-left");
+    } else {
+        Slides[2].className = Slides[2].className.replace("animate-left", "");
+    }
+    if (document.body.scrollTop > 2*window.innerHeight+5 || document.documentElement.scrollTop > 2*window.innerHeight+5) {
+        Slides[3].classList.add("animate-left");
+    } else {
+        Slides[3].className = Slides[3].className.replace("animate-left", "");
+    }
+    if (document.body.scrollTop > 3*window.innerHeight+5 || document.documentElement.scrollTop > 3*window.innerHeight+5) {
+        Slides[4].classList.add("animate-left");
+    } else {
+        Slides[4].className = Slides[4].className.replace("animate-left", "");
+    }
+    if (document.body.scrollTop > 4*window.innerHeight+5 || document.documentElement.scrollTop > 4*window.innerHeight+5) {
+        Slides[5].classList.add("animate-left");
+    } else {
+        Slides[5].className = Slides[5].className.replace("animate-left", "");
+    }
+	if (document.body.scrollTop > 5*window.innerHeight+5 || document.documentElement.scrollTop > 5*window.innerHeight+5) {
+        document.querySelector("footer").classList.add("animate-left");
+    } else {
+        document.querySelector("footer").className = document.querySelector("footer").className.replace("animate-left", "");
+    }
+}    
+    
+</script>
+</body>
+</html>

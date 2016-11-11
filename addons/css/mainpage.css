@@ -1,0 +1,87 @@
+/* General*/
+body{margin:0}
+footer,header,nav{display:block}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+img{border:0}
+button{margin:0;overflow:visible;text-transform:none;-webkit-appearance:button;cursor:pointer}
+
+.top{position:fixed; top:0; width:100%; z-index:1}
+.center{text-align:center!important}
+
+.navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.navbar li{ width:14.2%;float:left;}
+.navbar li a{display:block;padding:8px 16px}
+.navbar li a:hover{color:#000;background-color:#ccc}
+.navbar a{text-decoration:none!important}
+
+.gradtop {background: -webkit-linear-gradient(#fff 20%,#eef 50%,#dde 100%); background: linear-gradient(#fff 20%,#eef 80%,#dde 100%);}
+.graddown {background: -webkit-linear-gradient(#dde 10%,#eef 50%,#fff 100%); background: linear-gradient(#dde 10%,#eef 50%,#fff 100%);}
+
+.btn,.hover-opacity,.hover-opacity-off,.navbar a,.hover-light-blue,.hover-green,.hover-pink,.hover-red,.hover-white,.hover-black,.hover-grey,.hover-light-grey,.hover-dark-grey,.hover-text-light-blue,.hover-text-green,.hover-text-pink,.hover-text-red,.hover-text-white,.hover-text-black,.hover-text-grey,.hover-text-light-grey,.hover-text-dark-grey{-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s}
+
+.card{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+
+.display-container{position:relative}
+.display-middle{position:absolute; top:20vh;}
+.container{padding:0.01em 16px;}
+.display-bottommiddle{position:absolute;left:0;bottom:4%;width:100%;text-align:center}
+.display-bottom{position:absolute;left:0;bottom:5%;width:100%;}
+
+.btn{border:none; outline:0; padding:0.5% 3%; overflow:hidden; color:#fff; background-color:#000; text-align:center; cursor:pointer;}
+.btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19)}
+
+.round-32{border-radius:32px!important}
+
+.opacity{opacity:0.80;}
+.opaque,.hover-opacity-off:hover{opacity:1;}
+
+.animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{-webkit-animation:opac 1s;animation:opac 1s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{position:relative;-webkit-animation:animatetop 1s;animation:animatetop 1s}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{position:relative;-webkit-animation:animateleft 1s;animation:animateleft 1s}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;-webkit-animation:animateright 1s;animation:animateright 1s}
+@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{position:relative;-webkit-animation:animatebottom 1s;animation:animatebottom 1s}
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {-webkit-animation:animatezoom 1s;animation:animatezoom 1s}
+@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+
+/* Colors */
+.hover-none:hover{box-shadow:none!important;background-color:transparent!important}
+.light-blue,.hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.blue,.hover-blue:hover{color: #000; background-color:#76a0ef!important}
+.green,.hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.pink,.hover-pink:hover{color:#fff!important;background-color:#ff80b3!important}
+.red,.hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.white,.hover-white:hover{color:#000!important;background-color:#fff!important}
+.black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+.grey,.hover-grey:hover{color:#000!important;background-color:#9e9e9e!important}
+.light-grey,.hover-light-grey:hover{color:#000!important;background-color:#f1f1f1!important}
+.dark-grey,.hover-dark-grey:hover{color:#fff!important;background-color:#616161!important}
+
+/* Text Colors */
+.text-light-blue,.hover-text-light-blue:hover{color:#87CEEB!important}
+.text-light-green,.hover-text-light-green:hover{color:#96d278!important}
+.text-blue,.hover-text-blue:hover{color:#76a0ef!important}
+.text-green,.hover-text-green:hover{color:#5fb962!important}
+.text-pink,.hover-text-pink:hover{color:#ff80b3!important}
+.text-light-pink,.hover-text-light-pink:hover{color:#ffb3d1!important}
+.text-red,.hover-text-red:hover{color:#f5493d!important}
+.text-white,.hover-text-white:hover{color:#fff!important}
+.text-black,.hover-text-black:hover{color:#000!important}
+.text-grey,.hover-text-grey:hover{color:#9e9e9e!important}
+.text-light-grey,.hover-text-light-grey:hover{color:#f1f1f1!important}
+.text-dark-grey,.hover-text-dark-grey:hover{color:#3a3a3a!important}

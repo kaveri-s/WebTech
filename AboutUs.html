@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Homaholics</title>
+	<link rel="stylesheet" href="./addons/css/mainpage.css">
+	<style>
+		@font-face{
+            font-family: 'Raleway';
+            src: url(./addons/fonts/Raleway-Medium.ttf);
+        }
+
+        @font-face{
+            font-family: 'Sofia';
+            src: url(./addons/fonts/Sofia-Regular.woff);
+        }
+        
+        @font-face{
+            font-family: 'Great Vibes';
+            src: url(./addons/fonts/GreatVibes-Regular.woff);
+        }
+        body{background: url('./addons/images/aboutUs.png'); background-attachment: fixed; background-size: cover;}
+        a{font-family: 'Sofia', cursive; font-size: 2vw; text-decoration: none; background-color: transparent;font-weight: bold;text-shadow: 0 0 0.3em #666; color: white;}
+        a:hover{text-shadow: 0 0 0.6em #555, 0 0 0.4em #222; font-size: 2.02vw;}
+        header{font-family: 'Great Vibes', cursive; font-size: 7vw; font-weight: bolder; color:white; text-align: center; text-shadow: 0 0 0.5em #888, 0 0 0.3em #666; top:3%;}
+        .maindiv{margin:none; padding:none; width:100vw; }
+        .flexbox{display: flex; justify-content: space-between; align-items: stretch; width: 100vw;}
+        .flexitem{width: 30%; height: 100%; text-align: center; margin: 2% 7%;}
+        img{border-radius: 50%; width:70%; box-shadow:0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19);}
+        h3,h2,p{font-family:'Raleway';font-size: 100%;}
+        h3{border-top: 2% solid #e0e0e0;font-size: 150%; padding-top: 10%;}
+        h2{font-size: 120%; color: #ccc;}
+        .flexitem{
+            -webkit-transition-property: width, height, margin;
+            -webkit-transition-duration: 0.5s;
+            transition-property: width, height, margin;
+            transition-duration: 0.5s;
+        }
+        .flexitem:hover{width:35%; height: 100%; margin: 0 7%;}
+        
+	</style>
+</head>
+<body>
+    <div class="maindiv">
+        <header class="animate-top">Meet The Trio</header>
+        <div class="flexbox">
+            <div class="text-white flexitem animate-left"><img src="./addons/images/Hithyshi.jpg" style="max-width:100%; max-height:100%;"/><h3>Hithyshi</h3><h2>Chef de Cuisine</h2><p>e-mail: hithyshi@thh.in</p></div>
+            <div class="text-white flexitem animate-bottom"><img src="./addons/images/Kaveri.jpg" style="max-width:100%; max-height:100%;"/><h3>Kaveri</h3><h2>Classical Dancer</h2><p>e-mail: kaveri@thh.in</p></div>
+            <div class="text-white flexitem animate-right"><img src="./addons/images/Likitha.jpg" style="max-width:100%; max-height:100%;"/><h3>Likhita</h3><h2>Interior Designer</h2><p>e-mail: likitha@thh.in</p></div>
+        </div>
+    </div>
+	<footer style="margin: none; position:fixed; bottom: 2%; width:100%;">
+           <a href="./Landing.html">&#10094; Back to Main Page</a>
+	</footer>
+</body>
+</html>
